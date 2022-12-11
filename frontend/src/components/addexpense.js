@@ -18,6 +18,9 @@ export default function AddExpenseModal({ show, handleClose}) {
       if(!res.id){
         alert("Unable to create. Error!");
       }
+      else{
+        window.location.reload();
+      }
     })
     .catch((err) => {
       console.log(err);
